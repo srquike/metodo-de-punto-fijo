@@ -60,7 +60,7 @@ namespace metodo_de_punto_fijo
                     iteracionAnterior = iteracion;
                     i++;
 
-                } while (Math.Round(iteracion.Error, 3) != 0.001);
+                } while (iteracion.Error != 0.001 && iteracion.Error != 0);
 
                 DgIteraciones.ItemsSource = iteraciones;
             }
